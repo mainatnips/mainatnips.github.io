@@ -1,1 +1,1 @@
-# mainatnips.github.io
+# Machine Intelligence @ NIPS 2016
