@@ -85,7 +85,7 @@ Recent years have seen the success of machine learning systems, in particular de
 This workshop aims to stimulate theoretical and practical advances in the development of machines endowed with human-like general-purpose intelligence, focusing in particular on benchmarks to train and evaluate progress in machine intelligence. The workshop will feature invited talks by top researchers from machine learning, AI, cognitive science and NLP, who will discuss with the audience their ideas about what are the most pressing issues we face in developing true AI and the best methods to measure genuine progress. We are moreover calling for position statements from interested researchers to complement the workshop program (see <a href="#call">below</a>).
 </p>
 <p>
-The workshop will also introduce the new <a href="#environment">Environment for Communication-Based AI</a> to the research community, encouraging discussion on how to make it the ultimate benchmark for machine intelligence. The Environment aims at being an interactive playground where systems can only succeed if they possess the hallmarks of intelligence we listed above. In September, we will make a prototype of the Environment available, so that researchers interested in submitting position statements to the workshop can experiment with it and take it into account in their proposals.
+The workshop will also introduce  <a href="#environment">CommAI-env</a>, a new environment for the development of communication-based AI, to the research community, encouraging discussion on how to make it the ultimate benchmark for machine intelligence. CommAI-env is an interactive playground where systems can only succeed if they possess the hallmarks of intelligence we listed above. A prototype of the environment is already available, so that researchers interested in submitting position statements to the workshop can experiment with it and take it into account in their proposals.
 </p>
 
 
@@ -98,10 +98,9 @@ challenges to develop general machine intelligence (with special
 interest in communication-based intelligence), and what are the data
 and benchmarks we need to properly address such challenges. While all
 points of view are welcome, we encourage in particular critiques of
-the Environment for Communication-Based AI. To facilitate this, we
-will make a prototype of the Environment publicly available
-by <b>Sunday, September 22nd</b> (downloading instructions will be
-posted on <a href="#environment">this page</a>). Abstracts must be
+CommAI-env. To facilitate this, we
+made a prototype of this environment publicly available
+ (see <a href="#environment">below</a>). Abstracts must be
 submitted in PDF format
 to <a href="mailto:main.at.nips2016@gmail.com">main.at.nips2016@gmail.com</a>
 by <b>Sunday, October 9th</b>. We will notify acceptance by <b>Sunday,
@@ -136,66 +135,65 @@ in the panel discussions.
     <h2 id="dates">Dates</h2>
 
 <ul>
-<li><b>Sunday, September 22nd:</b> Release of Environment for Communication-Based AI prototype</li>
 <li><b>Sunday, October 9th:</b> Abstract submission deadline</li>
 <li><b>Sunday, October 23d:</b> Notification of acceptance</li>
 <li><b>Friday, December 9th:</b> Workshop</li>
 </ul>
 
 
-    <h2 id="environment">The Environment for Communication-Based AI</h2>
+    <h2 id="environment">CommAI-env: An Environment for Communication-Based AI</h2>
     <p>
       Scientists at <a href="https://research.facebook.com/ai/"
       target="_blank">FAIR</a> are organizing a challenge for
       intelligent machines learning to communicate in natural
       language. The competition consists of language tasks that get
-      incrementally harder. We will post a link to a prototype of
-      the <i>Environment for Communication-Based AI</i> in which the
-      competition should take place here soon.
+      incrementally harder. A prototype of CommAI-env, the interactive
+      environment supporting the competition, is available <a href="https://github.com/facebookresearch/CommAI-env" target="_blank">here.</a>
     </p>    
-    <p>
-      Here are some examples of the tasks that learning machines face in the Environment:
-    </p>
-    <p>
-      <strong>Teacher:</strong> say apple. </br>
-      &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> dfjkjf </br>
-      <strong>Teacher:</strong> the right answer is apple. </br>
-      <strong>Teacher:</strong> say apple. </br>
-      &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> apple. </br>
-      <strong>Teacher:</strong> good job. (Reward: +1) </br>
-      <strong>Teacher:</strong> say hello world and you will get reward. </br>
-      &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> hello world. </br>
-      <strong>Teacher:</strong> correct. (Reward: +1) </br>
-      <strong>Teacher:</strong> i have an apple and a banana and no pear. do I have a pear? </br>
-      &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> no. </br>
-      <strong>Teacher:</strong> correct. (Reward: +1) </br>
-      <strong>Teacher:</strong> i have an apple, an apple and a banana. how many bananas do i have? </br>
-      &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> no. </br>
-      <strong>Teacher:</strong> the right answer is one. </br>
-      <strong>Teacher:</strong> i have an apple, an apple and a banana. how many bananas do i have? </br>
-      &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> one. </br>
-      <strong>Teacher:</strong> good job. (Reward: +1) </br>
-      <strong>Teacher:</strong> how many apples do i have? </br>
-      &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> one. </br>
-      <strong>Teacher:</strong> the right answer is two. </br>
-      <strong>Teacher:</strong> move forward. </br>
-      &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> i move forward. </br>
-      <strong>Teacher:</strong> you moved. (Reward: +1) </br>
-      <strong>Teacher:</strong> move left. </br>
-      &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> i turn left. </br>
-      <strong>Teacher:</strong> you turned. </br>
-      &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> i move forward. </br>
-      <strong>Teacher:</strong> you moved. (Reward: +1) </br>
-      <strong>Teacher:</strong> there is an apple in front of you. pick up the apple. </br>
-      &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> i pick up the apple. </br>
-      <strong>Teacher:</strong> there in no apple here. </br>
-      &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> i move forward. </br>
-      <strong>Teacher:</strong> you moved. </br>
-      &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> i pick up the apple. </br>
-      <strong>Teacher:</strong> you picked up the apple. (Reward: +1) </br>
-    </p>
+    <!-- <p> -->
+    <!--   Here are some examples of the tasks that learning machines face in the Environment: -->
+    <!-- </p> -->
+    <!-- <p> -->
+    <!--   <strong>Teacher:</strong> say apple. </br> -->
+    <!--   &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> dfjkjf </br> -->
+    <!--   <strong>Teacher:</strong> the right answer is apple. </br> -->
+    <!--   <strong>Teacher:</strong> say apple. </br> -->
+    <!--   &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> apple. </br> -->
+    <!--   <strong>Teacher:</strong> good job. (Reward: +1) </br> -->
+    <!--   <strong>Teacher:</strong> say hello world and you will get reward. </br> -->
+    <!--   &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> hello world. </br> -->
+    <!--   <strong>Teacher:</strong> correct. (Reward: +1) </br> -->
+    <!--   <strong>Teacher:</strong> i have an apple and a banana and no pear. do I have a pear? </br> -->
+    <!--   &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> no. </br> -->
+    <!--   <strong>Teacher:</strong> correct. (Reward: +1) </br> -->
+    <!--   <strong>Teacher:</strong> i have an apple, an apple and a banana. how many bananas do i have? </br> -->
+    <!--   &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> no. </br> -->
+    <!--   <strong>Teacher:</strong> the right answer is one. </br> -->
+    <!--   <strong>Teacher:</strong> i have an apple, an apple and a banana. how many bananas do i have? </br> -->
+    <!--   &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> one. </br> -->
+    <!--   <strong>Teacher:</strong> good job. (Reward: +1) </br> -->
+    <!--   <strong>Teacher:</strong> how many apples do i have? </br> -->
+    <!--   &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> one. </br> -->
+    <!--   <strong>Teacher:</strong> the right answer is two. </br> -->
+    <!--   <strong>Teacher:</strong> move forward. </br> -->
+    <!--   &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> i move forward. </br> -->
+    <!--   <strong>Teacher:</strong> you moved. (Reward: +1) </br> -->
+    <!--   <strong>Teacher:</strong> move left. </br> -->
+    <!--   &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> i turn left. </br> -->
+    <!--   <strong>Teacher:</strong> you turned. </br> -->
+    <!--   &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> i move forward. </br> -->
+    <!--   <strong>Teacher:</strong> you moved. (Reward: +1) </br> -->
+    <!--   <strong>Teacher:</strong> there is an apple in front of you. pick up the apple. </br> -->
+    <!--   &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> i pick up the apple. </br> -->
+    <!--   <strong>Teacher:</strong> there in no apple here. </br> -->
+    <!--   &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> i move forward. </br> -->
+    <!--   <strong>Teacher:</strong> you moved. </br> -->
+    <!--   &nbsp;&nbsp;&nbsp;&nbsp;<strong>Learner:</strong> i pick up the apple. </br> -->
+    <!--   <strong>Teacher:</strong> you picked up the apple. (Reward: +1) </br> -->
+    <!-- </p> -->
 
-    <p>For more information on the ideas motivating the competition, see:</p>
+    <p>For more information on the ideas motivating the environment
+    and the planned competition, see:</p>
 
     <h5><a href="http://arxiv.org/abs/1511.08130">A Roadmap towards Machine Intelligence</a></h5>
 
